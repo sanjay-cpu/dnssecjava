@@ -1,7 +1,12 @@
 branches:
   only:
     - master
+    - ppc64le
 language: java
+arch:
+  - amd64
+  - ppc64le
+
 jdk: openjdk8
 install: true
 script: mvn install -Dgpg.skip -B -V
